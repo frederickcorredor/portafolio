@@ -111,7 +111,7 @@
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    min-height: 92vh;
+    min-height: 80vh;
     position: relative;
     
 }
@@ -166,7 +166,7 @@ h1{
     position: sticky;
     z-index: 100;
     width: 100%;
-    top: 0px;
+    top: 10px;
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 49, 0.89);
