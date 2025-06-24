@@ -141,10 +141,12 @@ h1{
 
     }
 
+.contenidoQuienSoy{
+justify-content:flex-start;
+}
+
 .contenidoQuienSoy span{
 font-size:1.8rem;
-text-align:left;
-width:100%;
 }
 
     .fotoPerfil{
