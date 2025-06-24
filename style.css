@@ -352,6 +352,7 @@ h2{
   
     .carousel-container {
       margin-bottom: 20px;
+      overflow: hidden;
     }
   
     .carousel-nav.left {
