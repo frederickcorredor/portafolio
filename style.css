@@ -137,9 +137,13 @@ h1{
 
 @media (max-width:600px){
     h1{
-        font-size: 2.6rem;
+        font-size: 2.2rem;
 
     }
+
+.contenidoQuienSoy span{
+font-size:1.8rem;
+}
 
     .fotoPerfil{
         margin-top: 30px;
