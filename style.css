@@ -145,7 +145,7 @@ h1{
 justify-content:flex-start;
 }
 
-.contenidoQuienSoy span{
+.contenidoQuienSoy span p{
 font-size:1.5rem;
 }
 
@@ -157,7 +157,7 @@ font-size:1.5rem;
 
 
 .contenidoQuienSoy span p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .maquina{
