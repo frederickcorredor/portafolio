@@ -354,7 +354,7 @@ h2{
   }
 
   .carrousel-item {
-    opacity: 0.9;
+    opacity: 1;
   }
   #reversa{
     flex-direction: column-reverse;
