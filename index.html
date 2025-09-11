@@ -2,230 +2,532 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Desarrollador web" />
-  <meta name="keywords" content="desarrollo web, desarrollo wordpress, desarrollador web, programador wordpress, diseño web, developer, frontend" />
-  <meta name="author" content="frederick corredor" />
-  <meta property="og:image" content="images/pngwing.com (32).png" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Frederick Corredor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frederick Corredor — Desarrollador Web | HTML • CSS • JS • WordPress</title>
+  <meta name="description" content="Soy Frederick Corredor, desarrollador web front‑end. Creo sitios únicos, rápidos, responsivos y optimizados para SEO con HTML, CSS, JavaScript y WordPress." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="icono.webp" type="image/x-icon">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Frederick Corredor — Desarrollador Web" />
+  <meta property="og:description" content="Webs únicas, rápidas y listas para convertir: HTML, CSS, JS, UX/UI, SEO, WordPress." />
+  <meta property="og:image" content="frederickcorredorlogo.webp" />
+  <meta property="og:url" content="#" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Schema.org (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Frederick Corredor",
+    "jobTitle": "Web Developer",
+    "url": "#",
+    "image": "frederickcorredorlogo.webp",
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "WordPress", "UX", "UI", "SEO"],
+    "sameAs": ["#", "#"]
+  }
+  </script>
 </head>
 <body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <img src="nvologofred.webp" alt="Logo Frederick Corredor" loading="lazy" />
+      </a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#uxui">UX/UI</a></li>
+          <li><a href="#animaciones">Animaciones</a></li>
+          <li><a href="#seo">SEO</a></li>
+          <li><a href="#portfolio">Trabajos</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#contacto" class="tag">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menú"><span></span></button>
+    </div>
+    <div class="menu-panel" id="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#uxui">UX/UI</a>
+      <a href="#animaciones">Animaciones</a>
+      <a href="#seo">SEO</a>
+      <a href="#portfolio">Trabajos</a>
+      <a href="#precios">Precios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </header>
 
-  <section class="quienSoy">
-    <div class="parallax-bg"></div> <!-- Fondo Parallax -->
-    <div class="filtro">
-      <div class="fotoPerfil" data-aos="fade-down" data-aos-delay="3600" data-aos-duration="3000">
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img class="fiver" src="html.webp" alt="Fiverr" />
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img class="github" src="css.webp" alt="GitHub" />
-        </a>
-        <a href="#">
-          <img src="perfil.png" alt="Otro" class="foto" style="width: 150px;" />
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img class="linkedin" src="java.webp" alt="LinkedIn" />
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <img class="whatsapp" src="wordpress.webp" alt="WhatsApp" />
-        </a>
-      </div>
-
-      <div class="contenidoQuienSoy" data-aos="fade-up" data-aos-delay="600" data-aos-duration="3000">
-        <span class="hola">Hola, me llamo</span>
-        <h1>Frederick Corredor</h1>
-        <span class="typed"></span>
-        <div id="cadenas-texto">
-          <p>Diseño webs <i class="maquina">Creativas</i></p>
-          <p>Diseño webs <i class="maquina">Dinámicas</i></p>
-          <p>Diseño webs <i class="maquina">Modernas</i></p>
-          <p>Diseño webs <i class="maquina">Rápidas</i></p>
-          <p>Diseño webs <i class="maquina">Atractivas</i></p>
+  <!-- HERO (AIDA: Atención) -->
+  <section class="hero section" id="top" aria-label="Hero">
+    <div class="spark" aria-hidden="true"></div>
+    <div class="container">
+      <div>
+        <span class="tag reveal">Desarrollador Web • HTML • CSS • JS • WordPress</span>
+        <h1 class="hero-title reveal" style="margin:.6rem 0 1rem">Creo webs únicas, rápidas y listas para convertir</h1>
+        <p class="hero-sub reveal"><b>Soy</b> <strong>Frederick Corredor</strong> <b>y mi enfoque es simple:</b> <br>
+        Sitios Web que cargan en segundos, diseños que la gente quiere usar y estrategias pensadas para que tu web genere ingresos reales.</p>
+        <div class="hero-cta reveal">
+          <a class="btn" href="#contacto">Cotiza tu web ahora</a>
+          <a class="btn secondary" href="#portfolio">Ver trabajos</a>
+        </div>
+        <div class="stats reveal" style="margin-top:22px">
+          <div class="stat"><h3><span class="counter" data-to="100">0</span>/100</h3><div class="muted">PageSpeed Móvil</div><div class="bar"><span data-bar="92"></span></div></div>
+          <div class="stat"><h3><span class="counter" data-to="2" data-decimals="0">0</span>s</h3><div class="muted">LCP objetivo</div><div class="bar"><span data-bar="85"></span></div></div>
+          <div class="stat"><h3><span class="counter" data-to="0.1" data-decimals="1">0</span></h3><div class="muted">CLS estable</div><div class="bar"><span data-bar="95"></span></div></div>
         </div>
       </div>
+
+      <img src="frederickcorredor.webp" alt="Foto de perfil de Frederick Corredor" class="reveal fotoPerfil">
+      <div class="card reveal highlight">
+        <h3 style="margin-top:0;margin-bottom: 6px;">¿Qué hago exactamente?</h3>
+        <p>Diseño y desarrollo <strong>experiencias web rápidas, atractivas y a medida</strong>, con código limpio y optimizado. <br><br>
+        Trabajo la estructura semántica, la accesibilidad y esos detalles invisibles que hacen que tu sitio cargue rápido y se sienta profesional</p> <br>
+        <p style="margin:0">Integraciones a WordPress (plantillas personalizadas y WooCommerce) sin sacrificar rendimiento.</p>
+      </div>
     </div>
-    
   </section>
 
-  <section class="sobreMi" data-aos="fade-up" data-aos-delay="600" data-aos-duration="3000">
+  <!-- SERVICIOS / Habilidades (AIDA: Interés) -->
+  <section class="section" id="servicios">
+  <div class="container">
+    <h2 class="reveal">Páginas web modernas y de alto nivel</h2>
+    <p class="muted reveal">
+      Sitios rápidos, seguros y fáciles de usar, con diseños que se adaptan a cualquier pantalla, se ven bien en todo dispositivo y ofrecen una experiencia fluida e interactiva.
+    </p>
 
-    <h2>Desarrollador y diseñador web</h2>
+    <!-- NUEVO: layout 2 columnas -->
+    <div class="servicios-two-col">
+      
 
-    <div class="carousel-container">
-        <button class="carousel-nav left">&lt;</button>
-        <div class="container-carrousel">
-          <div class="carrousel">
-            <div class="carrousel-item"><img src="1.png" alt=""></div>
-            <div class="carrousel-item"><img src="2.png" alt=""></div>
-            <div class="carrousel-item"><img src="3.png" alt=""></div>
-            <div class="carrousel-item"><img src="4.png" alt=""></div>
-            <div class="carrousel-item"><img src="5.png" alt=""></div>
-            <div class="carrousel-item"><img src="7.png" alt=""></div>
+      <!-- DERECHA: features original -->
+      <div class="grid features">
+        <article class="card tilt reveal">
+          <h3>Landing Pages</h3>
+          <p>Diseños enfocados en conversión, tiempos de carga mínimos; compatibilidad total con móviles.</p>
+        </article>
+        <article class="card tilt reveal">
+          <h3>Menús digitales</h3>
+          <p>Cartas interactivas y visuales, fáciles de editar; acceso inmediato mediante código QR.</p>
+        </article>
+        <article class="card tilt reveal">
+          <h3>Páginas corporativas</h3>
+          <p>Estructura profesional y adaptable, identidad visual sólida; autogestión rápida del contenido.</p>
+        </article>
+        <article class="card tilt reveal">
+          <h3>WordPress a medida</h3>
+          <p>Plantillas ligeras y escalables, sin dependencias pesadas; integración con WooCommerce.</p>
+        </article>
+      </div>
+
+      <!-- DERECHA: stage 3D decorativo -->
+      <aside class="code-stage reveal" aria-hidden="true">
+
+        <!-- Tarjeta 4 -->
+        <section class="code-card c4 float" style="--ry:-30deg; --z:80px">
+          <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+          <pre class="code"><span class="c">// styles.css</span>
+          .container{ display:grid; gap:<span class="n">16px</span>; place-items:center; }</pre>
+        </section>
+
+        <!-- Tarjeta 5 -->
+        <section class="code-card c5 float" style="--ry:34deg; --z:120px">
+          <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+          <pre class="code"><span class="c">// utils.ts</span>
+          <span class="k">export</span> <span class="k">const</span> delay=(ms)=> <span class="k">new</span> <span class="fn">Promise</span>(r=> <span class="fn">setTimeout</span>(r,ms))</pre>
+        </section>
+
+        <!-- Tarjeta 6 -->
+        <section class="code-card c6 float" style="--ry:-23deg; --z:75px">
+          <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+          <pre class="code"><span class="c">// index.html</span>
+          &lt;<span class="k">div</span> class=<span class="s">"app"</span>&gt;Hola Mundo&lt;/<span class="k">div</span>&gt;</pre>
+        </section>
+      </aside>
+    </div>
+    <!-- /NUEVO -->
+  </div>
+</section>
+
+
+  <!-- 3D Carousel (Portfolio Destacado) -->
+  <section class="section" id="portfolio-3d" aria-label="Carrusel 3D de proyectos">
+      <div class="container contcarrusel" >
+        <div class="textcarusel">
+          <h2 class="reveal">Así trabajo para mis clientes</h2>
+        <p class="reveal">Mira algunos ejemplos de lo que puedo hacer y piensa cómo se vería tu marca con un carrusel 3D como este.<br></p>
+        </div>
+
+
+        <div class="carousel3d-container reveal" role="region" aria-roledescription="carrusel" aria-label="Proyectos en 3D">
+          <button class="carousel3d-nav left" aria-label="Anterior" title="Anterior" type="button">⟵</button>
+          <div class="carousel3d-viewport">
+            <div class="carousel3d" aria-live="polite">
+              <div class="carousel3d-item"><img src="paradises.webp" alt="Proyecto 1" loading="lazy"></div>
+              <div class="carousel3d-item"><img src="renovex.webp" alt="Proyecto 2" loading="lazy"></div>
+              <div class="carousel3d-item"><img src="samamarketresearch.webp" alt="Proyecto 3" loading="lazy"></div>
+              <div class="carousel3d-item"><img src="agmen.webp" alt="Proyecto 4" loading="lazy"></div>
+              <div class="carousel3d-item"><img src="thermo.webp" alt="Proyecto 5" loading="lazy"></div>
+              <div class="carousel3d-item"><img src="luyury.webp" alt="Proyecto 6" loading="lazy"></div>
+            </div>
           </div>
+          <button class="carousel3d-nav right" aria-label="Siguiente" title="Siguiente" type="button">⟶</button>
         </div>
-        <button class="carousel-nav right">&gt;</button>
+        <p><strong>Tu web tambien podria tener un carrusel 3D</strong></p>
       </div>
+  </section>
 
-      <p>
-        Sitios web atractivos, funcionales y optimizados para brindar una experiencia excepcional a los usuarios.
+
+  <!-- UX/UI -->
+  <section class="section" id="uxui">
+    <div class="container">
+      <h2 class="reveal">Claridad, consistencia y microdetalles</h2>
+      <p class="muted reveal">
+      Priorizo la <strong>arquitectura de información y jerarquía visual</strong>, los <strong>microdetalles</strong>que hacen la interfaz predecible y agradable. <br><br> <b>Resultado:</b> navegación intuitiva, menos dudas y <strong>más conversión</strong>.
       </p>
-  </section>
-
-  <section class="importanciaWeb" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000">
-    <h2>¿Por qué es vital tener un sitio web moderno?</h2>
-    <div class="contenedorImportancia">
-      <div class="cajaImportancia">
-        <h3>✨ Primera impresión</h3>
-        <p>Tu sitio es tu carta de presentación. Un diseño atractivo genera confianza y profesionalismo desde el primer segundo.</p>
-      </div>
-      <div class="cajaImportancia">
-        <h3>📱 Adaptado a todos los dispositivos</h3>
-        <p>Más del 70% del tráfico web proviene de móviles. Un diseño responsivo asegura que tu sitio luzca bien en cualquier pantalla.</p>
-      </div>
-      <div class="cajaImportancia">
-        <h3>⚡ Rápido y funcional</h3>
-        <p>Un sitio lento o con errores ahuyenta a los usuarios. La velocidad y funcionalidad son clave para retener visitas y convertir clientes.</p>
-      </div>
-      <div class="cajaImportancia">
-        <h3>🎯 Enfocado en resultados</h3>
-        <p>No es solo estética: un sitio bien diseñado guía al usuario hacia la acción, ya sea contactarte, comprar o suscribirse.</p>
+      <div class="compare">
+        <div class="card reveal">
+          <h3>UX (Experiencia de Usuario)</h3>
+          <ul>
+            <li>Arquitectura de información y flujos enfocados en conversión.</li>
+            <li>Accesibilidad: contraste, navegación por teclado y lecturas claras.</li>
+            <li>Contenido persuasivo: beneficios antes que características.</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3>UI (Interfaz)</h3>
+          <ul>
+            <li>Diseño visual con jerarquía fuerte y componentes consistentes.</li>
+            <li>Microinteracciones: hovers, reveals y feedback sutil.</li>
+            <li>Prototipo en Figma o directamente en código.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="misProyectos" data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000">
-    <h2>Algunos de mis proyectos web</h2>
-    <div class="grid-proyectos">
-
-      <div class="proyecto">
-        <img src="7.png" alt="Sitio 3" data-full="7.png">
-        <h3>Thermica Ingenieria</h3>
-        <p>Web informativa de empresa de tecnologia con formulario de contacto y botón de whatsapp</p>
-        <a href="https://thermicaing.com/" target="_blank">Ver sitio</a>
+  <!-- Animaciones -->
+  <section class="section" id="animaciones">
+    <div class="container">
+      <h2 class="reveal">Animaciones interactivas</h2>
+      <p class="muted reveal">Creo <strong>microinteracciones</strong> y <strong>animaciones</strong> (scroll, hover y parallax sutil) que guían la atención, refuerzan la marca y aumentan la <strong>conversión</strong> sin distraer.
+Resultado: interfaz más viva, <strong>feedback</strong> claro y una experiencia que invita a seguir navegando.</p>
+      <div class="grid features">
+        <div class="card reveal"><strong>Scroll reveal:</strong> cada bloque aparece al entrar en viewport (esta web lo hace).</div>
+        <div class="card reveal"><strong>Hover:</strong> botones, tarjetas y enlaces reaccionan sin recargar la página.</div>
+        <div class="card reveal"><strong>Parallax:</strong> hero con movimiento sutil según el scroll y el mouse.</div>
+        <div class="card reveal"><strong>Contadores:</strong> números animados que muestran impacto y resultados.</div>
       </div>
-
-      <div class="proyecto">
-        <img src="1.png" alt="Sitio 1" data-full="1.png">
-        <h3>Renovex en línea</h3>
-        <p>Sitio web para empresa de salud. con tienda online y bot interactivo que realiza test de salud de forma automatizada</p>
-        <a href="https://renovexenlinea.com" target="_blank">Ver sitio</a>
-      </div>
-
-       <div class="proyecto">
-        <img src="3.png" alt="Sitio 3" data-full="3.png">
-        <h3>Todo Listo Shop</h3>
-        <p>Tienda Online realizada con Woocomerce con opcion de busqueda de articulos por nombre y/o categoria.</p>
-        <a href="https://todolisto.shop" target="_blank">Ver sitio</a>
-      </div>
-
-      <div class="proyecto">
-        <img src="2.png" alt="Sitio 2" data-full="2.png">
-        <h3>Dácyon</h3>
-        <p>Web de captación y capacitación para empresa de call center con sección de videos portegido con usuario y contraseña</p>
-        <a href="https://agmen.co" target="_blank">Ver sitio</a>
-      </div>
-     
-      <div class="proyecto">
-        <img src="4.png" alt="Sitio 1" data-full="4.png">
-        <h3>Luyury</h3>
-        <p>Sex shop realizada con Woocomerce con opcion de busqueda de articulos por nombre y/o categoria.</p>
-        <a href="https://luyury.co" target="_blank">Ver sitio</a>
-      </div>
-      <div class="proyecto">
-        <img src="5.png" alt="Sitio 2" data-full="5.png">
-        <h3>Desarrollo Web Para Niños</h3>
-        <p>Landing Page Informativa sobre programa de enseñanza de programación para niños</p>
-        <a href="https://frederickcorredor.github.io/clases/" target="_blank">Ver sitio</a>
-      </div>
-      
     </div>
   </section>
 
-  <section class="timeline-section" id="procesoTrabajo">
-    <h2 data-aos="fade-up">¿Cómo trabajo?</h2>
-    <div class="timeline-horizontal animated-timeline reveal">
-      
-      <div class="timeline-item" data-aos="zoom-in" data-aos-delay="100">
+  <!-- SEO -->
+  <section class="section" id="seo">
+    <div class="container">
+      <h2 class="reveal">SEO técnico desde el código</h2>
+       <p class="muted reveal">Optimizo la <strong>estructura semántica</strong>, la <strong>velocidad</strong> (<strong>Core Web Vitals</strong>) y el <strong>contenido</strong> para que los buscadores entiendan tu propuesta y los usuarios tengan una experiencia fluida. Además, una <strong>arquitectura clara</strong> facilita el <strong>rastreo e indexación</strong>. Resultado: <strong>mayor visibilidad</strong>.</p>
+      <div class="grid features">
+        <div class="card reveal"><strong>Metas y OG:</strong> títulos, descripciones y tarjetas sociales listos.</div>
+        <div class="card reveal"><strong>HTML semántico:</strong> headings y landmarks correctos.</div>
+        <div class="card reveal"><strong>Rich Snippets:</strong> JSON‑LD para servicios/persona.</div>
+        <div class="card reveal"><strong>Velocidad:</strong> imágenes WebP/AVIF, minificación y lazy load.</div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Rendimiento -->
+  <section class="section" id="rendimiento">
+    <div class="container">
+      <h2 class="reveal">Rendimiento y tiempos de carga</h2>
+      <p class="muted reveal">Imágenes WebP/AVIF, lazy load, minificación, carga selectiva, caché + CDN y <em>critical CSS</em>. Objetivo: <strong>LCP &lt; 2.5s</strong>, <strong>CLS &lt; .1</strong>, <strong>90–100/100</strong> en móvil.</p>
+      <div class="grid features">
+        <div class="card reveal">Comparo y mejoro Core Web Vitals: LCP, INP (antes FID) y CLS.</div>
+        <div class="card reveal">Elimino dependencias pesadas y cargo sólo lo necesario.</div>
+        <div class="card reveal">Hosting optimizado + CDN para servir archivos cercanos al usuario.</div>
+        <div class="card reveal">Estrategias de <em>preload</em>, <em>defer</em> y <em>lazy</em> para JS y medios.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Único por página -->
+  <section class="section" id="diferenciador">
+    <div class="container">
+      <h2 class="reveal">Diseños únicos por página, coherentes con tu marca</h2>
+      <p class="muted reveal">Trabajo con un sistema de diseño: base consistente y variantes por sección/página. Sin clones, sin plantillas genéricas.</p>
+    </div>
+  </section>
+
+  <!-- Aburrida vs Wow -->
+  <section class="section" id="boring">
+    <div class="container">
+      <h2 class="reveal">¿Web aburrida o memorable?</h2>
+      <div class="demo">
+        <div class="plain reveal">
+          <h3>Aburrida</h3>
+          <p>Títulos genéricos, bloques interminables de texto, sin interacción y con poca jerarquía.</p>
+          <button class="btn secondary" disabled>Más información</button>
+        </div>
+        <div class="wow reveal">
+          <h3>Memorable</h3>
+          <p>Storytelling, jerarquía visual, animaciones sutiles, CTA claros y contenido que conecta.</p>
+          <a class="btn" href="#contacto">Quiero una web así</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="section" id="procesoTrabajo">
+  <div class="container">
+    <h2 class="reveal" data-stagger style="--i:0">¿Cómo trabajo?</h2>
+
+    <div class="timeline reveal" data-stagger style="--i:1">
+      <!-- 1 -->
+      <article class="timeline-item card reveal" data-stagger style="--i:2">
         <div class="circle">🗣️</div>
         <h3>Entrevista</h3>
-        <p>Escucho tus necesidades y objetivos para entender tu visión.</p>
-      </div>
-      
-      <div class="line arrow" data-aos="fade" data-aos-delay="200"></div>
-  
-      <div class="timeline-item" data-aos="zoom-in" data-aos-delay="300">
+        <p class="muted">Escucho tus necesidades y objetivos para entender tu visión.</p>
+      </article>
+
+      <div class="timeline-connector" aria-hidden="true"></div>
+
+      <!-- 2 -->
+      <article class="timeline-item card reveal" data-stagger style="--i:3">
         <div class="circle">📝</div>
         <h3>Propuesta</h3>
-        <p>Te presento una solución personalizada con tiempos y costos.</p>
-      </div>
-      
-      <div class="line arrow" data-aos="fade" data-aos-delay="400"></div>
-  
-      <div class="timeline-item" data-aos="zoom-in" data-aos-delay="500">
+        <p class="muted">Te presento una solución personalizada con tiempos y costos.</p>
+      </article>
+
+      <div class="timeline-connector" aria-hidden="true"></div>
+
+      <!-- 3 -->
+      <article class="timeline-item card reveal" data-stagger style="--i:4">
         <div class="circle">💻</div>
         <h3>Desarrollo</h3>
-        <p>Construyo tu sitio optimizado, moderno y responsivo.</p>
-      </div>
-      
-      <div class="line arrow" data-aos="fade" data-aos-delay="600"></div>
-  
-      <div class="timeline-item" data-aos="zoom-in" data-aos-delay="700">
+        <p class="muted">Construyo tu sitio optimizado, moderno y responsivo.</p>
+      </article>
+
+      <div class="timeline-connector" aria-hidden="true"></div>
+
+      <!-- 4 -->
+      <article class="timeline-item card reveal" data-stagger style="--i:5">
         <div class="circle">🔎</div>
         <h3>Revisión</h3>
-        <p>Revisamos juntos y ajusto lo necesario antes de entregar.</p>
-      </div>
-      
-      <div class="line arrow" data-aos="fade" data-aos-delay="800"></div>
-  
-      <div class="timeline-item" data-aos="zoom-in" data-aos-delay="900">
+        <p class="muted">Revisamos juntos y ajusto lo necesario antes de entregar.</p>
+      </article>
+
+      <div class="timeline-connector" aria-hidden="true"></div>
+
+      <!-- 5 -->
+      <article class="timeline-item card reveal" data-stagger style="--i:6">
         <div class="circle">🚀</div>
         <h3>Entrega</h3>
-        <p>Publico el sitio y te doy acceso completo con soporte inicial.</p>
+        <p class="muted">Publico el sitio y te doy acceso completo con soporte inicial.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <!-- Elementor vs Yo -->
+  <section class="section" id="elementor">
+    <div class="container">
+      <h2 class="reveal">¿Mejor que Elementor? Sí, en rendimiento y personalización</h2>
+      <div class="compare">
+        <div class="card reveal">
+          <h3>Elementor / No‑code</h3>
+          <ul>
+            <li>Código pesado por widget y CSS/JS duplicado.</li>
+            <li>Diseños repetidos y limitaciones para interacciones avanzadas.</li>
+            <li>Dependencia de un ecosistema externo.</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3>Código a medida conmigo</h3>
+          <ul>
+            <li>Web ligera (&lt; 1 MB), menos requests, mejor PageSpeed.</li>
+            <li>Diseño único + animaciones personalizadas.</li>
+            <li>SEO técnico impecable y escalabilidad real.</li>
+          </ul>
+        </div>
       </div>
-      
     </div>
   </section>
 
-  <section class="cta-whatsapp">
-    <h2>¿Tienes un proyecto en mente?</h2>
-    <p>Hablemos y llevémoslo a otro nivel.</p>
-    <a href="https://wa.me/573507687220" target="_blank" class="boton-whatsapp">Escríbeme por WhatsApp</a>
+
+
+  <!-- Testimonios (Carrusel) -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <h2 class="reveal">Opiniones de clientes</h2>
+      <div class="carousel reveal" role="region" aria-label="Carrusel de testimonios">
+        <div class="track" id="track" aria-live="polite">
+          <div class="slide">
+            <blockquote>“Frederick transformó nuestra presencia digital. La web carga rapidísimo y las consultas aumentaron desde el primer mes.”</blockquote>
+            <footer>— Renacer Creativo</footer>
+          </div>
+          <div class="slide">
+            <blockquote>“Nos entregó un sitio elegante, con animaciones modernas y 100% administrable. ¡Excelente trabajo!”</blockquote>
+            <footer>— Paradise Travel</footer>
+          </div>
+          <div class="slide">
+            <blockquote>“Pasamos de Elementor a una plantilla a medida. El rendimiento y el SEO mejoraron notablemente.”</blockquote>
+            <footer>— SAMA Market Research</footer>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="prev" aria-label="Anterior">⟵</button>
+          <button id="next" aria-label="Siguiente">⟶</button>
+        </div>
+      </div>
+    </div>
   </section>
-  
-  
 
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <h2 class="reveal">Trabajos destacados</h2>
+      <div class="grid portfolio">
+        <article class="project reveal">
+          <img src="samamarketresearch.webp" alt="Proyecto corporativo" loading="lazy">
+          <div class="p-body">
+            <div class="p-title">Web Corporativa — SAMA Market Research</div>
+            <p class="muted">Investigación de mercados, animaciones de estadísticas y SEO técnico.</p>
+          </div>
+          <a class="visit" href="https://samamarketresearch.co" target="_blank" rel="noopener">Ver proyecto</a>
+        </article>
+        <article class="project reveal">
+          <img src="renovex.webp" alt="Tienda en línea" loading="lazy">
+          <div class="p-body">
+            <div class="p-title">E‑commerce — Renovex en línea</div>
+            <p class="muted">Catálogo de paquetes, pagos y diseño responsive de alto rendimiento.</p>
+          </div>
+          <a class="visit" href="https://renovexenlinea.com/" target="_blank" rel="noopener">Ver proyecto</a>
+        </article>
+        <article class="project reveal">
+          <img src="paradises.webp" alt="Landing de servicios" loading="lazy">
+          <div class="p-body">
+            <div class="p-title">Landing Page — Paradises Travel</div>
+            <p class="muted">Banner con fondo dinámico tipo carrusel, CTA claros y prueba social.</p>
+          </div>
+          <a class="visit" href="https://paradisestravel.com/" target="_blank" rel="noopener">Ver proyecto</a>
+        </article>
 
-  
-  
-  <div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="imgModalContent">
-  </div>
-  
+        <article class="project reveal">
+                  <img src="thermo.webp" alt="Landing de servicios" loading="lazy">
+                  <div class="p-body">
+                    <div class="p-title">Web Corporativa — thermicaing</div>
+                    <p class="muted">Web corporativa con secciones informativas, catálogo y contacto.</p>
+                  </div>
+                  <a class="visit" href="https://thermicaing.com/" target="_blank" rel="noopener">Ver proyecto</a>
+                </article>
+        <article class="project reveal">
+                  <img src="luyury.webp" alt="Landing de servicios" loading="lazy">
+                  <div class="p-body">
+                    <div class="p-title">Tienda Online — Luyury SexShop</div>
+                    <p class="muted">Tienda Online, Catálogo de productos con filtros por catégoria y buscador por nombre.</p>
+                  </div>
+                  <a class="visit" href="https://luyury.co/" target="_blank" rel="noopener">Ver proyecto</a>
+                </article>
+        <article class="project reveal">
+                  <img src="agmen.webp" alt="Landing de servicios" loading="lazy">
+                  <div class="p-body">
+                    <div class="p-title">Web Captación y formación — Agmen Logística Integral</div>
+                    <p class="muted">Banner con fondo dinámico tipo carrusel, CTA claros y prueba social.</p>
+                  </div>
+                  <a class="visit" href="https://agmen.co/" target="_blank" rel="noopener">Ver proyecto</a>
+                </article>
+      </div>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="typed.umd.js"></script>
-  <script>
-    const typed = new Typed('.typed', {
-      stringsElement: '#cadenas-texto',
-      typeSpeed: 75,
-      startDelay: 300,
-      backSpeed: 75,
-      smartBackspace: true,
-      backDelay: 1500,
-      loop: true,
-      showCursor: true,
-      cursorChar: '|',
-      contentType: 'html',
-    });
-  </script>
+  <!-- Precios -->
+  <section class="section" id="precios">
+    <div class="container">
+      <h2 class="reveal">Planes y Precios</h2>
+      <p class="muted reveal">Tabla referencial (COP). Se ajusta según alcance, integraciones y tiempos.</p>
+      <div class="card reveal" style="overflow:auto">
+        <table aria-label="Tabla de precios">
+          <thead>
+            <tr>
+              <th>Tipo de Página Web</th>
+              <th>Características Incluidas</th>
+              <th>Precio (COP)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Tipo">Landing Page Básica</td>
+              <td data-label="Características">Una sola sección con scroll largo, 4–6 bloques (hero, servicios, testimonios, contacto, etc.), diseño responsive y animaciones básicas</td>
+              <td data-label="Precio">$350,000</td>
+            </tr>
+            <tr>
+              <td data-label="Tipo">Web Corporativa Estándar</td>
+              <td data-label="Características">3–5 páginas/secciones independientes (Inicio, Servicios, Nosotros, Blog, Contacto), formulario de contacto, diseño personalizado</td>
+              <td data-label="Precio">$500,000</td>
+            </tr>
+            <tr class="featured">
+              <td data-label="Tipo">Web Corporativa Avanzada</td>
+              <td data-label="Características">6–8 páginas/secciones, blog integrado, animaciones, SEO básico, integración con redes sociales</td>
+              <td data-label="Precio">$700,000</td>
+            </tr>
+            <tr>
+              <td data-label="Tipo">Catálogo de Productos (sin pago online)</td>
+              <td data-label="Características">Web corporativa + catálogo (10–30 productos), buscador/filtros, fichas de producto sin pasarela de pago</td>
+              <td data-label="Precio">$850,000</td>
+            </tr>
+            <tr>
+              <td data-label="Tipo">Tienda Online WooCommerce Básica</td>
+              <td data-label="Características">Hasta 30 productos, carrito de compras, pasarela de pago (PayU, Stripe, MercadoPago), diseño responsive</td>
+              <td data-label="Precio">$1,000,000</td>
+            </tr>
+            <tr>
+              <td data-label="Tipo">Tienda Online WooCommerce Avanzada</td>
+              <td data-label="Características">+50 productos, variaciones (tallas, colores, etc.), integraciones de envío, optimización de rendimiento y seguridad</td>
+              <td data-label="Precio">$1,300,000</td>
+            </tr>
+            <tr>
+              <td data-label="Tipo">Tienda Online Premium</td>
+              <td data-label="Características">+100 productos, automatizaciones (correos, cupones, ventas cruzadas), SEO avanzado, integración con marketing digital</td>
+              <td data-label="Precio">$1,600,000+</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contacto / CTA (AIDA: Acción) -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="flex">
+        <div class="reveal" style="text-align: center;">
+          <h2>Hablemos de tu proyecto</h2>
+          <p class="muted">Cuéntame qué necesitas y te propongo una solución a medida con objetivos, tiempos y presupuesto claros.</p>
+          <a class="btn" href="https://wa.link/1m803x" aria-label="Escríbeme por WhatsApp" style="margin: 16px;" target="_blank">Escríbeme por WhatsApp</a> <a class="btn secondary" href="mailto:tuemail@dominio.com">frederickcorredor@gmail.com</a>
+        </div>
+        <form class="card reveal" onsubmit="event.preventDefault(); alert('¡Gracias! Me pondré en contacto.');">
+          <label>Nombre<input required style="width:100%;margin-top:6px" placeholder="Tu nombre"/></label>
+          <label style="display:block;margin-top:12px">Email<input type="email" required style="width:100%;margin-top:6px" placeholder="tucorreo@dominio.com"/></label>
+          <label style="display:block;margin-top:12px">Mensaje<textarea required rows="4" style="width:100%;margin-top:6px" placeholder="Cuéntame brevemente tu proyecto"></textarea></label>
+          <button class="btn" style="margin-top:12px">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:12px; align-items:center">
+      <small class="muted">© <span id="y"></span> Frederick Corredor — Hecho con HTML, CSS y JS</small>
+      <div style="display:flex; gap:8px; align-items:center">
+        <a class="tag" href="#top">↑ Volver arriba</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>
