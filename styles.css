@@ -143,6 +143,7 @@ table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),trans
 /* Comparison */
 .compare{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,0.9fr)); gap:18px;width: 100%;}
 .compare .card ul{margin:0; padding-left:18px}
+#diferenciador{text-align: center;}
 
 /*velocidad*/
 #kpis-rendimiento.kpis{
