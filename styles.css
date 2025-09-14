@@ -144,6 +144,26 @@ table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),trans
 .compare{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,0.9fr)); gap:18px;width: 100%;}
 .compare .card ul{margin:0; padding-left:18px}
 
+/*velocidad*/
+#kpis-rendimiento.kpis{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap:16px;
+  align-items:stretch;
+}
+.kpi{ display:flex; flex-direction:column; gap:8px; }
+.kpi-num{
+  font-size: clamp(24px, 4.5vw, 36px);
+  font-weight: 900;
+  letter-spacing:.2px;
+  display:flex; align-items:baseline; gap:6px;
+}
+.kpi .bar{ height:8px; background:#141820; border-radius:999px; overflow:hidden; }
+.kpi .bar>span{ display:block; height:100%; width:0;
+  background:linear-gradient(90deg, var(--gold), var(--gold-2));
+}
+
+
 /* Carousel */
 .carousel{position:relative; overflow:hidden; border-radius:var(--radius); border:1px solid rgba(255,255,255,.06); background:#0c0f14}
 .track{display:flex; transition: transform .5s ease}
