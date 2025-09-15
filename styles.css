@@ -141,7 +141,7 @@ table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),trans
 #animacionEscudo{width: 100%; max-width: 400px;min-width: 300px;filter: invert(1); transition: .7s ease-in; &:hover{filter: invert(0);}}
 
 /* Comparison */
-.compare{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,0.9fr)); gap:18px;width: 100%;}
+.compare{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,0.9fr)); gap:18px;width: 100%; justify-content: center;}
 .compare .card ul{margin:0; padding-left:18px}
 #diferenciador{text-align: center;}
 
