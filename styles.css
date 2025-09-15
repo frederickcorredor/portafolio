@@ -356,7 +356,7 @@ white-space: pre-wrap;
 /* layout responsivo */
 @media(max-width: 900px){
   .timeline-item{ min-width: 280px; }
-  .timeline{ grid-auto-flow: column; overflow-x: auto; padding-bottom: 12px; scroll-padding: 16px;justify-content: flex-start; -webkit-overflow-scrolling: touch; }
+  .timeline{ grid-auto-flow: column; overflow-x: auto; padding-bottom: 12px; scroll-padding: 16px;justify-content: flex-start; -webkit-overflow-scrolling: touch;overflow-y: hidden; }
   .timeline::-webkit-scrollbar{ height:6px; }
   .timeline::-webkit-scrollbar-thumb{ background:rgba(255,255,255,.08); border-radius:999px; }
   .timeline::-webkit-scrollbar-track{ background:transparent; }   
