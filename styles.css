@@ -112,7 +112,7 @@ table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),trans
 
 /* Stats */
 .stats{display:grid; grid-auto-flow:column; gap:10px; align-items:start}
-.stat{background:linear-gradient(180deg,#0e1116,#0c0f13); border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:16px 18px}
+.stat{background:linear-gradient(180deg,#0e1116,#0c0f13); border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:10px;}
 .stat h3{margin:0; font-size:clamp(24px, 4.2vw, 38px)}
 .bar{height:8px; background:#141820; border-radius:999px; overflow:hidden; margin-top:8px}
 .bar>span{display:block; height:100%; width:0; background:linear-gradient(90deg, var(--gold), var(--gold-2))}
