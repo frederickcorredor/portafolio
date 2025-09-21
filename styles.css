@@ -70,7 +70,7 @@ body.no-scroll { overflow: hidden; }
 /* Hero */
 .hero{position:relative; overflow:hidden; padding-top:clamp(50px,3vw,90px)}
 .hero .container{display:grid; grid-template-columns: 1.2fr .8fr; align-items:end; gap:clamp(16px,4vw,36px);position: relative;}
-.hero-title{font-size: clamp(24px, 6vw, 40px); letter-spacing:.3px; line-height:1.06; font-weight:900}
+.hero-title{font-size: clamp(24px, 6vw, 40px); letter-spacing:.3px; line-height:1.06; font-weight:900; text-wrap: balance;}
 .hero-sub{font-size:clamp(16px,2.4vw,20px); color:var(--muted)}
 .hero-cta{display:flex; align-items:center; gap:12px; margin-top:18px}
 .spark{position:absolute; inset:auto auto -15% -15%; width:60vw; height:60vw; background:radial-gradient(closest-side, rgba(255,215,0,.15), transparent 70%); filter: blur(40px); transform:translateY(var(--pY, 0)) translateX(var(--pX, 0))}
@@ -113,7 +113,7 @@ table tr.featured td{background:linear-gradient(350deg,rgba(255,215,0,.06),trans
 /* Stats */
 .stats{display:grid; grid-auto-flow:column; gap:10px; align-items:start}
 .stat{background:linear-gradient(180deg,#0e1116,#0c0f13); border:1px solid rgba(255,255,255,.06); border-radius:16px; padding:10px;}
-.stat h3{margin:0; font-size:clamp(21px, 4.2vw, 38px)}
+.stat h3{margin:0; font-size:clamp(19px, 4.2vw, 38px)}
 .bar{height:8px; background:#141820; border-radius:999px; overflow:hidden; margin-top:8px}
 .bar>span{display:block; height:100%; width:0; background:linear-gradient(90deg, var(--gold), var(--gold-2))}
 
