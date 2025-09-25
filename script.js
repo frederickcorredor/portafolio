@@ -308,12 +308,16 @@ const form = document.getElementById('contactForm');
 const msg = document.getElementById('formMsg');
 const submitBtn = form?.querySelector('button[type="submit"]');
 
-if (form) {
+if (form && submitBtn) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // activar loader
-    if (submitBtn) submitBtn.classList.add("loading");
+    // guardar el texto original
+    const originalText = submitBtn.textContent;
+
+    // activar loader + cambiar texto
+    submitBtn.classList.add("loading");
+    submitBtn.textContent = "Enviando…";
 
     const data = {
       nombre: document.getElementById('nombre').value,
@@ -336,8 +340,10 @@ if (form) {
     } catch (err) {
       msg.textContent = "❌ Error de conexión.";
     } finally {
-      // quitar loader
-      if (submitBtn) submitBtn.classList.remove("loading");
+      // quitar loader + restaurar texto
+      submitBtn.classList.remove("loading");
+      submitBtn.textContent = originalText;
     }
   });
 }
+
