@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Frederick Corredor — Desarrollador Web" />
   <meta property="og:description" content="Webs únicas, rápidas y listas para convertir: HTML, CSS, JS, UX/UI, SEO, WordPress." />
-  <meta property="og:image" content="frederickcorredorlogo.webp" />
+  <meta property="og:image" content="fredercorredordeveloperlogo.webp" />
   <meta property="og:url" content="https://frederickcorredor.github.io/portafolio/" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -558,12 +558,19 @@
           <p class="muted">Cuéntame qué necesitas y te propongo una solución a medida con objetivos, tiempos y presupuesto claros.</p>
           <a class="btn" href="https://wa.link/1m803x" aria-label="Escríbeme por WhatsApp" style="margin: 16px;" target="_blank">Escríbeme por WhatsApp</a> <a class="btn secondary" href="mailto:tuemail@dominio.com">frederickcorredor@gmail.com</a>
         </div>
-        <form class="card reveal" onsubmit="event.preventDefault(); alert('¡Gracias! Me pondré en contacto.');">
-          <label>Nombre<input required style="width:100%;margin-top:6px" placeholder="Tu nombre"/></label>
-          <label style="display:block;margin-top:12px">Email<input type="email" required style="width:100%;margin-top:6px" placeholder="tucorreo@dominio.com"/></label>
-          <label style="display:block;margin-top:12px">Mensaje<textarea required rows="4" style="width:100%;margin-top:6px" placeholder="Cuéntame brevemente tu proyecto"></textarea></label>
-          <button class="btn" style="margin-top:12px">Enviar</button>
+        <form id="contactForm" class="card reveal">
+          <label>Nombre <br>
+            <input id="nombre" name="nombre" required placeholder="Tu nombre"/>
+          </label><br>
+          <label>Email <br>
+            <input id="email" name="email" type="email" required placeholder="tucorreo@dominio.com"/>
+          </label> <br>
+          <label>Mensaje <br>
+            <textarea id="mensaje" name="mensaje" required rows="4" placeholder="Cuéntame brevemente tu proyecto"></textarea>
+          </label> <br>
+          <button class="btn" type="submit">Enviar</button>
         </form>
+        <p id="formMsg" class="muted"></p>
       </div>
     </div>
   </section>

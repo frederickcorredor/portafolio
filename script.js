@@ -68,11 +68,22 @@ const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').mat
 const revealEls = document.querySelectorAll('.reveal');
 
 if (prefersReduced) {
-  revealEls.forEach(el => { el.classList.add('in-view'); });
+  revealEls.forEach(el => el.classList.add('in-view'));
 } else if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver((entries, obs) => {
     entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in-view'); obs.unobserve(e.target); }
+      if (e.isIntersecting) {
+        e.target.classList.add('in-view');
+        
+        // caso especial: el escudo
+        if (e.target.id === 'animacionEscudo') {
+          setTimeout(() => {
+            e.target.classList.add('activo');
+          }, 900); // 0.9s
+        }
+        
+        obs.unobserve(e.target);
+      }
     });
   }, { threshold: 0.55 });
   revealEls.forEach(el => io.observe(el));
@@ -292,3 +303,34 @@ update();
 
 containers.forEach(initCarousel3D);
 })();
+
+const form = document.getElementById('contactForm');
+const msg = document.getElementById('formMsg');
+
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const data = {
+      nombre: document.getElementById('nombre').value,
+      email: document.getElementById('email').value,
+      mensaje: document.getElementById('mensaje').value,
+    };
+
+    try {
+      const res = await fetch("https://script.google.com/macros/s/AKfycbyEV8NsjyM8TO3DlJQiyJf_bejp_TTEjAAu2QpnxHBrDnUnq-5c5tuqt4wQP8lYS9kI/exec", {
+        method: "POST",
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        msg.textContent = "✅ ¡Gracias! Tus datos fueron enviados.";
+        form.reset();
+      } else {
+        msg.textContent = "⚠️ Ocurrió un error, intenta de nuevo.";
+      }
+    } catch (err) {
+      msg.textContent = "❌ Error de conexión.";
+    }
+  });
+}
