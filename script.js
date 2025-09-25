@@ -306,10 +306,14 @@ containers.forEach(initCarousel3D);
 
 const form = document.getElementById('contactForm');
 const msg = document.getElementById('formMsg');
+const submitBtn = form?.querySelector('button[type="submit"]');
 
 if (form) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // activar loader
+    if (submitBtn) submitBtn.classList.add("loading");
 
     const data = {
       nombre: document.getElementById('nombre').value,
@@ -331,6 +335,9 @@ if (form) {
       }
     } catch (err) {
       msg.textContent = "❌ Error de conexión.";
+    } finally {
+      // quitar loader
+      if (submitBtn) submitBtn.classList.remove("loading");
     }
   });
 }
